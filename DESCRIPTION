@@ -1,0 +1,19 @@
+Package: whitewater.extras
+Title: 'whitewater' extras
+Version: 0.0.1
+Authors@R: 
+    person("Josh", "Erickson", , "joshualerickson@gmail.com", role = c("aut", "cre"))
+Description: This package adds functionality to the 'whitewater' package through graphing, transforming and animating.
+Imports: 
+ ggplot2,
+ dplyr,
+ tidyr,
+ purrr,
+ gganimate,
+ scales,
+ ggfx,
+ magick
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
