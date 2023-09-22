@@ -20,7 +20,10 @@
 #' }
 ww_raster_hydrograph <- function(daily_values, value_name, without_ggfx = FALSE) {
 
-  xbreaks <- c(1, 32,  62,  93, 124, 152, 183, 213, 244, 274, 305, 336)
+  xbreaks <- daily_values %>%
+             dplyr::group_by(month) %>%
+             dplyr::slice_min(day, with_ties = F) %>%
+             dplyr::pull(wy_doy)
 
   dup_labels <- function(x) daily_values$month_abb[match(x, daily_values$wy_doy)]
 
