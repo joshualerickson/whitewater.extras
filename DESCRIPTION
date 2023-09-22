@@ -3,7 +3,7 @@ Title: 'whitewater' extras
 Version: 0.0.1
 Authors@R: 
     person("Josh", "Erickson", , "joshualerickson@gmail.com", role = c("aut", "cre"))
-Description: This package adds functionality to the 'whitewater' package through graphing, transforming and animating.
+Description: This package adds some functionality to the 'whitewater' package through graphing, transforming and animating.
 Imports: 
  ggplot2,
  dplyr,
